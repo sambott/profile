@@ -1,0 +1,27 @@
+[user]
+	name = Sam Bott
+	email = sam.bott@gmail.com
+[push]
+	default = simple
+[core]
+	autocrlf = false
+[alias]
+	glog = log --graph --pretty=format:"%C(auto,yellow)%h%C(auto)%d\\ %C(auto,reset)%s\\ \\ [%C(auto,green)%cn%C(auto,reset),\\ %C(auto,cyan)%ar%C(auto,reset)]"
+	graph = log --graph --oneline --decorate
+[difftool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+	trustExitCode = false
+[difftool]
+	prompt = false
+[diff]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+	trustExitCode = false
+	keepBackup = false
+[mergetool]
+	keepBackup = false
+[merge]
+	tool = kdiff3
+[credential]
+	helper = wincred
